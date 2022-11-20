@@ -48,7 +48,7 @@
                         {
                             "type": "TextBlock",
                             "weight": "Default",
-                            "text": "@{outputs('Get_item')?['body/Title']}",
+                            "text": "@{outputs('Get_item')?['body/Title']}", //TSS Ref No
                             "wrap": true
                         },
                         {
@@ -162,21 +162,21 @@
                         },
                         {
                             "type": "TextBlock",
-                            "text": "@{outputs('Get_item')?['body/ENGReviewStatus/Value']}",
+                            "text": "@{outputs('Get_item')?['body/ENGReviewStatus/Value']}", //Actual ENG Review Status
                             "wrap": true,
                             "size": "Small",
                             "color": "Attention"
                         },
                         {
                             "type": "TextBlock",
-                            "text": "@{outputs('Get_item')?['body/HODApprovalStatus/Value']}",
+                            "text": "@{outputs('Get_item')?['body/HODApprovalStatus/Value']}", //Actual HOD Approval Status
                             "wrap": true,
                             "size": "Small",
                             "color": "Attention"
                         },
                         {
                             "type": "TextBlock",
-                            "text": "@{outputs('Get_item')?['body/ProcurementAcceptance/Value']}",
+                            "text": "@{outputs('Get_item')?['body/ProcurementAcceptance/Value']}", //Actual Procurement Submission Status
                             "wrap": true,
                             "size": "Small",
                             "color": "Attention"
@@ -191,7 +191,7 @@
         {
             "type": "Action.OpenUrl",
             "title": "View in SharePoint",
-            "url": "@{outputs('Get_item')?['body/{Link}']}"
+            "url": "@{outputs('Get_item')?['body/{Link}']}" //Link to SharePoint item, (not folder)
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

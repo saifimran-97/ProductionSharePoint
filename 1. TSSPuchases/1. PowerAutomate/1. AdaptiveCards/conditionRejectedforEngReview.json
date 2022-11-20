@@ -1,0 +1,199 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Your request is rejected.",
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "TSS Ref No: ",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Type of Request:",
+                            "wrap": true,
+                            "height": "stretch",
+                            "horizontalAlignment": "Left",
+                            "separator": false,
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Reason:",
+                            "wrap": true,
+                            "height": "stretch",
+                            "horizontalAlignment": "Left",
+                            "separator": false,
+                            "spacing": "None"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Default",
+                            "text": "@{outputs('Get_item')?['body/Title']}",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "Submit for Engineer Review",
+                            "isSubtle": true,
+                            "wrap": true,
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "TSS not suitable for Engineer review",
+                            "isSubtle": true,
+                            "wrap": true,
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Description:",
+            "wrap": true,
+            "weight": "Default"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Power Automate detected your TSS not suitable for Engineer review. This may due to its already done. Do check your TSS status again.",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 28,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "TSS Status",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Engineer Review Status:",
+                            "wrap": true,
+                            "horizontalAlignment": "Left",
+                            "maxLines": 1,
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "HOD Approval Status:",
+                            "wrap": true,
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Procurement Submission:",
+                            "wrap": true,
+                            "size": "Small"
+                        }
+                    ],
+                    "height": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": 54,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Criteria",
+                            "wrap": true,
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "\"Not Started\",\"In Progress\",\"Rejected\",\"Not Required\"",
+                            "wrap": true,
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "\"Not Started\",\"Pending\"",
+                            "wrap": true,
+                            "size": "Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "\"Not Started\"",
+                            "wrap": true,
+                            "size": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 30,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Actual",
+                            "wrap": true,
+                            "weight": "Bolder",
+                            "color": "Attention"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/ENGReviewStatus/Value']}",
+                            "wrap": true,
+                            "size": "Small",
+                            "color": "Attention"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/HODApprovalStatus/Value']}",
+                            "wrap": true,
+                            "size": "Small",
+                            "color": "Attention"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "@{outputs('Get_item')?['body/ProcurementAcceptance/Value']}",
+                            "wrap": true,
+                            "size": "Small",
+                            "color": "Attention"
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "View in SharePoint",
+            "url": "@{outputs('Get_item')?['body/{Link}']}"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}

@@ -1,0 +1,87 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Your Disposal Approved by your Section Manager ",
+            "separator": false
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "FIN0001 Ref No: ",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Approved by:",
+                            "wrap": true,
+                            "height": "stretch",
+                            "horizontalAlignment": "Left",
+                            "separator": false,
+                            "spacing": "None"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "@{outputs('Change_HOD_Approval_to_Pending')?['body/Title']}",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "@{outputs('Change_HOD_Approval_to_Pending')?['body/SMApprover/DisplayName']}",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Description:",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Your Disposal is approved by SM. Power Automate will update your Disposal to HOD. ",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please check your Disposal on SharePoint",
+            "wrap": true,
+            "weight": "Lighter",
+            "size": "Small",
+            "horizontalAlignment": "Left",
+            "separator": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "View in SharePoint",
+            "url": "@{outputs('Get_item')?['body/{Link}']}"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}

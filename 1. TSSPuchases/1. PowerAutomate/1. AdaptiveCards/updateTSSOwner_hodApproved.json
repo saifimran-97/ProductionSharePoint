@@ -1,0 +1,87 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Your TSS Approved by HOD",
+            "separator": false
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "TSS Ref No: ",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Approved by:",
+                            "wrap": true,
+                            "height": "stretch",
+                            "horizontalAlignment": "Left",
+                            "separator": false,
+                            "spacing": "None"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "@{outputs('Get_item')?['body/Title']}",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "@{outputs('Get_item')?['body/HODApprovedBy/DisplayName']}",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Description:",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Your TSS is approved by HOD. Power Automate will send an update to Procurement to process your TSS.",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Check your \"Sent\" folder in Outlook.",
+            "wrap": true,
+            "weight": "Lighter",
+            "size": "Small",
+            "horizontalAlignment": "Left",
+            "separator": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "View in SharePoint",
+            "url": "@{outputs('Get_item')?['body/{Link}']}"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}

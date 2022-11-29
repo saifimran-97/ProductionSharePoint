@@ -10,3 +10,5 @@
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
+
+	Here's a sentence with a footnote. [^1]

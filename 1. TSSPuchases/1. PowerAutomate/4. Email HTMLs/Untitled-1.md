@@ -1,5 +1,8 @@
 ### My Great Heading {#custom-id}
 
+term
+: definition
+
 ```
 {
   "firstName": "John",

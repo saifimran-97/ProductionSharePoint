@@ -11,7 +11,7 @@
     {
       "elmType": "div",
       "style": {
-        "display": "=if([$HODApprovalStatus] == 'Not Started' || [$HODApprovalStatus] == 'Rejected', 'inherit','none')",
+        "display": "=if([$ENGReviewStatus] == 'Not Started' || [$ENGReviewStatus] == 'Rejected', 'inherit','none')",
         "flex-directon": "row",
         "justify-content": "left",
         "align-items": "center",
@@ -55,9 +55,9 @@
         "children": [
           {
             "elmType": "span",
-            "txtContent": "='This TSS Review is ' + toLowerCase([$HODApprovalStatus])",
+            "txtContent": "='This TSS Review is ' + toLowerCase([$ENGReviewStatus])",
             "style": {
-              "display": "=if([$HODApprovalStatus] == 'Not Started' ||[$HODApprovalStatus] == 'Rejected' , 'none','inherit')",
+              "display": "=if([$ENGReviewStatus] == 'Not Started' ||[$ENGReviewStatus] == 'Rejected' , 'none','inherit')",
               "padding-left": "5px",
               "word-break": "keep-all"
             }

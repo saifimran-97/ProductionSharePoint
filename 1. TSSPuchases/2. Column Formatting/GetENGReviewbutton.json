@@ -1,68 +1,31 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
-    "elmType": "div",
-    "style": {
-        "flex-directon": "row",
-        "justify-content": "left",
-        "align-items": "center",
-        "flex-wrap": "nowrap"
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "button",
+  "customRowAction": {
+    "action": "executeFlow",
+    "actionParams": "{\"id\": \"efab9c6f-08f0-4c2d-bcf9-15033885abd8\"}"
+  },
+  "attributes": {
+    "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+  },
+  "style": {
+    "border": "none",
+    "background-color": "transparent",
+    "cursor": "pointer"
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "attributes": {
+        "iconName": "TouchPointer"
+      },
+      "style": {
+        "padding-right": "6px"
+      }
     },
-    "children": [
-        {
-            "elmType": "div",
-            "style": {
-                "display": "=if([$ENGReviewStatus] == 'Not Started' || [$ENGReviewStatus] == '', 'inherit','none')",
-                "flex-directon": "row",
-                "justify-content": "left",
-                "align-items": "center",
-                "flex-wrap": "wrap"
-            },
-            "children": [
-                {
-                    "elmType": "button",
-                    "customRowAction": {
-                        "action": "executeFlow",
-                        "actionParams": "{\"id\": \"efab9c6f-08f0-4c2d-bcf9-15033885abd8\"}"
-                    },
-                    "attributes": {
-                        "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
-                    },
-                    "style": {
-                        "border": "none",
-                        "background-color": "transparent",
-                        "cursor": "pointer"
-                    },
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "attributes": {
-                                "iconName": "TouchPointer"
-                            },
-                            "style": {
-                                "padding-right": "6px"
-                            }
-                        },
-                        {
-                            "elmType": "span",
-                            "txtContent": "Get ENG Review"
-                        }
-                    ]
-                },
-                {
-                    "elmType": "div",
-                    "children": [
-                        {
-                            "elmType": "span",
-                            "txtContent": "='This item is ' + toLowerCase([$ENGReviewStatus])",
-                            "style": {
-                                "display": "=if([$ENGReviewStatus] == 'Not Started' ||[$ENGReviewStatus] == '' , 'none','inherit')",
-                                "padding-left": "5px",
-                                "word-break": "keep-all"
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    {
+      "elmType": "span",
+      "txtContent": "Get ENG Review"
+    }
+  ]
 }

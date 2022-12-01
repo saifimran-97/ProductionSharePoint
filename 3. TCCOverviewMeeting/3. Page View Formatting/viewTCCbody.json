@@ -1,0 +1,58 @@
+{
+    "sections": [
+        {
+            "displayname": "1. TSS Information",
+            "fields": [
+                "TSS Ref No",
+                "Folder",
+                "Department"
+            ]
+        },
+        {
+            "displayname": "2. Purchase Description",
+            "fields": [
+                "Purchase Type",
+                "Purchase Category",
+                "Purchase Description"
+            ]
+        },
+        {
+            "displayname": "3. Engineering Review Details",
+            "fields": [
+                "ENG Review Status",
+                "Assigned Engineer",
+                "ENG Reviewed Date"
+            ]
+        },
+        {
+            "displayname": "4. HOD Approval Details",
+            "fields": [
+                "HOD Approval Status",
+                "HOD Approved By",
+                "HOD Approved Date"
+            ]
+        },
+        {
+            "displayname": "5. Procurement Submission Details",
+            "fields": [
+                "Procurement Acceptance",
+                "Assigned Procurement Officer",
+                "Procurement Submission Date"
+            ]
+        },
+        {
+            "displayname": "6. PO Details and Progress",
+            "fields": [
+                "PO Progress",
+                "PO Number",
+                "PO Issued Date",
+                "PO ETD",
+                "PO Completed Date"
+            ]
+        },
+        {
+            "displayname": "7. Others",
+            "fields": []
+        }
+    ]
+}

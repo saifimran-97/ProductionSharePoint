@@ -13,7 +13,7 @@
         "height": "50px",
         "float": "left"
       },
-      "inlineEditField": "[$Created]",
+      "inlineEditField": "[$currentfield]",
       "children": [
         {
           "elmType": "div",
@@ -24,7 +24,7 @@
             "width": "32px",
             "height": "24px"
           },
-          "txtContent": "=if(getMonth([$Created])==0, 'Jan', if(getMonth([$Created])==1, 'Feb', if(getMonth([$Created])==2, 'Mar', if(getMonth([$Created])==3, 'Apr',  if(getMonth([$Created])==4, 'May', if(getMonth([$Created])==5, 'Jun', if(getMonth([$Created])==6 , 'Jul', if(getMonth([$Created])==7, 'Aug', if(getMonth([$Created])==8 , 'Sep', if(getMonth([$Created])==9, 'Oct', if(getMonth([$Created])==10, 'Nov', if(getMonth([$Created])==11, 'Dec', ''))))))))))))",
+          "txtContent": "=if(getMonth([$currentfield])==0, 'Jan', if(getMonth([$currentfield])==1, 'Feb', if(getMonth([$currentfield])==2, 'Mar', if(getMonth([$currentfield])==3, 'Apr',  if(getMonth([$currentfield])==4, 'May', if(getMonth([$currentfield])==5, 'Jun', if(getMonth([$currentfield])==6 , 'Jul', if(getMonth([$currentfield])==7, 'Aug', if(getMonth([$currentfield])==8 , 'Sep', if(getMonth([$currentfield])==9, 'Oct', if(getMonth([$currentfield])==10, 'Nov', if(getMonth([$currentfield])==11, 'Dec', ''))))))))))))",
           "attributes": {
             "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-16 ms-fontColor-themeTertiary--hover"
           }
@@ -42,7 +42,7 @@
             "height": "25px",
             "border": "1px"
           },
-          "txtContent": "=getDate([$Created])",
+          "txtContent": "=getDate([$currentfield])",
           "attributes": {
             "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-20 ms-fontColor-themeTertiary--hover"
           }
@@ -57,7 +57,7 @@
             "height": "48px",
             "border": "1px"
           },
-          "txtContent": "=getYear([$Created])",
+          "txtContent": "=getYear([$currentfield])",
           "attributes": {
             "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-10 ms-fontColor-themeTertiary--hover"
           }

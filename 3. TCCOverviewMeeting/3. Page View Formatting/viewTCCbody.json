@@ -1,11 +1,12 @@
 {
     "sections": [
         {
-            "displayname": "1. TSS Information",
+            "displayname": "1. TCC Details",
             "fields": [
-                "TSS Ref No",
-                "Folder",
-                "Department"
+                "Title",
+                "field_7",
+                "field_5",
+                "field_6"
             ]
         },
         {

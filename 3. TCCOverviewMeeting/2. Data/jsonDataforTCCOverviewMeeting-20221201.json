@@ -1,0 +1,139 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "Transfer-Encoding": "chunked",
+    "Vary": "Origin,Accept-Encoding",
+    "X-NetworkStatistics": "0,525568,0,0,237,0,23728",
+    "X-SharePointHealthScore": "3",
+    "X-MS-SPConnector": "1",
+    "X-SP-SERVERSTATE": "ReadOnly=0",
+    "DATASERVICEVERSION": "3.0",
+    "SPClientServiceRequestDuration": "197",
+    "X-DataBoundary": "NONE",
+    "X-1DSCollectorUrl": "https://mobile.events.data.microsoft.com/OneCollector/1.0/",
+    "X-AriaCollectorURL": "https://browser.pipe.aria.microsoft.com/Collector/3.0/",
+    "SPRequestGuid": "c565381f-66b6-43ad-8398-a4aad6fb05f8",
+    "request-id": "c565381f-66b6-43ad-8398-a4aad6fb05f8",
+    "MS-CV": "HzhlxbZmrUODmKSq1vsF+A.0",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-FRAME-OPTIONS": "SAMEORIGIN",
+    "Content-Security-Policy": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com securebroker.sharepointonline.com;",
+    "MicrosoftSharePointTeamServices": "16.0.0.23109",
+    "X-Content-Type-Options": "nosniff",
+    "X-MS-InvokeApp": "1; RequireReadOnly",
+    "Timing-Allow-Origin": "*",
+    "x-ms-apihub-cached-response": "false",
+    "x-ms-apihub-obo": "false",
+    "Cache-Control": "max-age=0, private",
+    "Date": "Thu, 01 Dec 2022 06:09:22 GMT",
+    "P3P": "CP=\"ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI\"",
+    "X-AspNet-Version": "4.0.30319",
+    "X-Powered-By": "ASP.NET",
+    "Content-Type": "application/json; charset=utf-8",
+    "Expires": "Wed, 16 Nov 2022 06:09:22 GMT",
+    "Last-Modified": "Thu, 01 Dec 2022 06:09:22 GMT",
+    "Content-Length": "3568"
+  },
+  "body": {
+    "@odata.etag": "\"8\"",
+    "ItemInternalId": "1",
+    "ID": 1,
+    "Title": "493",
+    "field_7": "CFM56-3/5A/5B/5C/7B Inspection-Chord 3D Final Dimension Gauge Stg 04 & 06",
+    "field_1": "Saif",
+    "field_3": "2022-07-27",
+    "field_4": "Azarul",
+    "PICEngineers": [
+      {
+        "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+        "Claims": "i:0#.f|membership|azarul.syazari@airfoil.com.my",
+        "DisplayName": "MOHD AZARUL SYAZARI BIN CHE AZIZ",
+        "Email": "Azarul.Syazari@airfoil.com.my",
+        "Picture": "https://airfoilservicessb.sharepoint.com/sites/ProductionSharePoint/_layouts/15/UserPhoto.aspx?Size=L&AccountName=Azarul.Syazari@airfoil.com.my",
+        "Department": "Engineering",
+        "JobTitle": "Tool Product Engineer"
+      }
+    ],
+    "PICEngineers@odata.type": "#Collection(Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser)",
+    "PICEngineers#Claims": [
+      "i:0#.f|membership|azarul.syazari@airfoil.com.my"
+    ],
+    "PICEngineers#Claims@odata.type": "#Collection(String)",
+    "field_5": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "HPC"
+    },
+    "field_5#Id": -1,
+    "field_6": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "CFM56 3D"
+    },
+    "field_6#Id": -1,
+    "field_8": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "KY Sub"
+    },
+    "field_8#Id": -1,
+    "field_9": "ASSB 6307;ASSB 6309",
+    "field_10": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "Closed"
+    },
+    "field_10#Id": -1,
+    "field_11": "2022-09-15T16:00:00Z",
+    "field_12": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "QA/Prod-Tooling"
+    },
+    "field_12#Id": -1,
+    "field_13": "17/8 - IP TCC Documentation\n7/9 - IP QA review\nUpdate IP QA review\nTCC completed 14/9",
+    "Remarks2": "020.20",
+    "Modified": "2022-11-30T10:18:39Z",
+    "Created": "2022-11-30T06:49:25Z",
+    "Author": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+      "Claims": "i:0#.f|membership|saif.imran@airfoil.com.my",
+      "DisplayName": "MOHAMAD SAIF IMRAN BIN BASIR",
+      "Email": "Saif.Imran@airfoil.com.my",
+      "Picture": "https://airfoilservicessb.sharepoint.com/sites/ProductionSharePoint/_layouts/15/UserPhoto.aspx?Size=L&AccountName=Saif.Imran@airfoil.com.my",
+      "Department": "Production Office",
+      "JobTitle": "Production Tooling Coordinator"
+    },
+    "Author#Claims": "i:0#.f|membership|saif.imran@airfoil.com.my",
+    "Editor": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+      "Claims": "i:0#.f|membership|saif.imran@airfoil.com.my",
+      "DisplayName": "MOHAMAD SAIF IMRAN BIN BASIR",
+      "Email": "Saif.Imran@airfoil.com.my",
+      "Picture": "https://airfoilservicessb.sharepoint.com/sites/ProductionSharePoint/_layouts/15/UserPhoto.aspx?Size=L&AccountName=Saif.Imran@airfoil.com.my",
+      "Department": "Production Office",
+      "JobTitle": "Production Tooling Coordinator"
+    },
+    "Editor#Claims": "i:0#.f|membership|saif.imran@airfoil.com.my",
+    "field_2": {
+      "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+      "Id": -1,
+      "Value": "Production Tooling"
+    },
+    "field_2#Id": -1,
+    "{Identifier}": "Lists%252fTCCOverview%2bMeeting%252f1_.000",
+    "{IsFolder}": false,
+    "{Thumbnail}": {
+      "Large": null,
+      "Medium": null,
+      "Small": null
+    },
+    "{Link}": "https://airfoilservicessb.sharepoint.com/sites/ProductionSharePoint/_layouts/15/listform.aspx?PageType=4&ListId=c735ffff%2Df3df%2D4769%2Db5b5%2D1c76705aecb3&ID=1&ContentTypeID=0x01008400EB058BB7F24FB8C42307BB6BDA9D00FDD68382B5867A44A8AACB199DAE0FCF",
+    "{Name}": "493",
+    "{FilenameWithExtension}": "493",
+    "{Path}": "Lists/TCCOverview Meeting/",
+    "{FullPath}": "Lists/TCCOverview Meeting/1_.000",
+    "{HasAttachments}": false,
+    "{VersionNumber}": "8.0"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "min-height": "1.5em",
+    "flex-direction": "column",
+    "align-items": "flex-start"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "forEach": "person in @currentField",
+      "style": {
+        "margin-top": "=if(loopIndex('person') == 0, '0', '1em')"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "display": "flex",
+            "flex-direction": "row"
+          },
+          "children": [
+            {
+              "elmType": "img",
+              "attributes": {
+                "src": "='/_layouts/15/userphoto.aspx?size=S&accountname='+ [$person.email]"
+              },
+              "style": {
+                "margin-top" : "0.5em",
+                "width": "3em",
+                "height": "3em",
+                "border-radius": "3em"
+              }
+            },
+            {
+              "elmType": "span",
+              "attributes": {
+                "href": "='https://airfoilservicessb.sharepoint.com/_layouts/15/me.aspx/?p=' + [$person.email] + '&v=work'",
+                "target": "_blank"
+              },
+              "style": {
+                "margin-top":"0.3em",
+                "margin-left": "0.5em"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "txtContent": "[$person.title]",
+                  "style": {
+                    "font-size": "1.2em"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

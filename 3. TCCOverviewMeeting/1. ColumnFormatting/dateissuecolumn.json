@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "padding": "10px"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "style": {
+        "position": "relative",
+        "width": "50px",
+        "height": "50px",
+        "float": "left"
+      },
+      "inlineEditField": "[$Created]",
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "position": "absolute",
+            "top": "2px",
+            "left": "0",
+            "width": "32px",
+            "height": "24px"
+          },
+          "txtContent": "=if(getMonth([$Created])==0, 'Jan', if(getMonth([$Created])==1, 'Feb', if(getMonth([$Created])==2, 'Mar', if(getMonth([$Created])==3, 'Apr',  if(getMonth([$Created])==4, 'May', if(getMonth([$Created])==5, 'Jun', if(getMonth([$Created])==6 , 'Jul', if(getMonth([$Created])==7, 'Aug', if(getMonth([$Created])==8 , 'Sep', if(getMonth([$Created])==9, 'Oct', if(getMonth([$Created])==10, 'Nov', if(getMonth([$Created])==11, 'Dec', ''))))))))))))",
+          "attributes": {
+            "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-16 ms-fontColor-themeTertiary--hover"
+          }
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "position": "absolute",
+            "display": "flex",
+            "justify-content": "center",
+            "align-items": "center",
+            "top": "25px",
+            "left": "0",
+            "width": "32px",
+            "height": "25px",
+            "border": "1px"
+          },
+          "txtContent": "=getDate([$Created])",
+          "attributes": {
+            "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-20 ms-fontColor-themeTertiary--hover"
+          }
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "position": "absolute",
+            "top": "0",
+            "left": "35px",
+            "width": "10px",
+            "height": "48px",
+            "border": "1px"
+          },
+          "txtContent": "=getYear([$Created])",
+          "attributes": {
+            "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-bold ms-fontSize-10 ms-fontColor-themeTertiary--hover"
+          }
+        }
+      ]
+    }
+  ]
+}

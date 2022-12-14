@@ -1,0 +1,1 @@
+Text(Value(Parent.Default),"#,#.00")

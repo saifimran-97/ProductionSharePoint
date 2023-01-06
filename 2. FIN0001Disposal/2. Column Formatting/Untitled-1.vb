@@ -1,0 +1,1 @@
+=IF([Metrology Acceptance]="Approved",NOW(),IF([Metrology Acceptance]="Rejected",NOW(),IF([Metrology Acceptance]="Rejected",NOW(),""))

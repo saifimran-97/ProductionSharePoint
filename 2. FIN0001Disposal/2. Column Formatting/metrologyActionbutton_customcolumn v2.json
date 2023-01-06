@@ -11,7 +11,7 @@
     {
       "elmType": "div",
       "style": {
-        "display": "=if([$FinanceSM_x002f_CFOApproval] == 'Pending' || [$FinanceSM_x002f_CFOApproval] == '', 'inherit','none')",
+        "display": "=if([$MNTReviewed] == 'Pending' || [$MNTReviewed] == '', 'inherit','none')",
         "flex-directon": "row",
         "justify-content": "left",
         "align-items": "center",
@@ -23,8 +23,8 @@
           "customRowAction": {
             "action": "setValue",
             "actionInput": {
-              "FinanceSM_x002f_CFOApproval": "Approved",
-              "FinanceActionBy": "@me"
+              "MNTReviewed": "Completed",
+              "MNT_x0020_Approved_x0020_By": "@me"
             }
           },
           "attributes": {
@@ -52,7 +52,7 @@
             },
             {
               "elmType": "span",
-              "txtContent": "Approve",
+              "txtContent": "Complete",
               "style": {
                 "word-break": "keep-all"
               }
@@ -64,8 +64,8 @@
           "customRowAction": {
             "action": "setValue",
             "actionInput": {
-              "FinanceSM_x002f_CFOApproval": "Rejected",
-              "FinanceActionBy": "@me"
+              "MNTReviewed": "Rejected",
+              "MNT_x0020_Approved_x0020_By": "@me"
             }
           },
           "attributes": {
@@ -99,6 +99,47 @@
               }
             }
           ]
+        },
+        {
+          "elmType": "button",
+          "customRowAction": {
+            "action": "setValue",
+            "actionInput": {
+              "MNTReviewed": "Not Required",
+              "MNT_x0020_Approved_x0020_By": "@me"
+            }
+          },
+          "attributes": {
+            "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+          },
+          "style": {
+            "border": "none",
+            "background-color": "transparent",
+            "cursor": "pointer",
+            "display": "flex",
+            "flex-directon": "row",
+            "justify-content": "left",
+            "align-items": "center",
+            "flex-wrap": "wrap"
+          },
+          "children": [
+            {
+              "elmType": "span",
+              "attributes": {
+                "iconName": "Blocked"
+              },
+              "style": {
+                "padding": "4px"
+              }
+            },
+            {
+              "elmType": "span",
+              "txtContent": "Not Required",
+              "style": {
+                "word-break": "keep-all"
+              }
+            }
+          ]
         }
       ]
     },
@@ -107,9 +148,9 @@
       "children": [
         {
           "elmType": "span",
-          "txtContent": "='This item is ' + toLowerCase([$FinanceSM_x002f_CFOApproval])",
+          "txtContent": "='This item is ' + toLowerCase([$MNTReviewed])",
           "style": {
-            "display": "=if([$FinanceSM_x002f_CFOApproval] == 'Pending' ||[$FinanceSM_x002f_CFOApproval] == '' , 'none','inherit')",
+            "display": "=if([$MNTReviewed] == 'Pending' ||[$MNTReviewed] == '' , 'none','inherit')",
             "padding-left": "5px",
             "word-break": "keep-all"
           }

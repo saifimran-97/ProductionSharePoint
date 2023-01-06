@@ -1,0 +1,86 @@
+{
+    "sections": [
+        {
+            "displayname": "Part A. FIN 0001 Ref No and Link Folder",
+            "fields": [
+                "Title",
+                "Link",
+                "Disposal Status"
+            ]
+        },
+        {
+            "displayname": "Part A. FIN 0001 Details",
+            "fields": [
+                "Item Description",
+                "FIN 0001 Category",
+                "FIN 0001 Condition",
+                "Section"
+            ]
+        },
+        {
+            "displayname": "Part A. Section Manager Approval",
+            "fields": [
+                "SM Approval",
+                "SM Approver",
+                "SM Approval Date"
+            ]
+        },
+        {
+            "displayname": "Part A. HOD Approval",
+            "fields": [
+                "HOD Approval",
+                "HOD Approved By",
+                "HOD Approval Date"
+            ]
+        },
+        {
+            "displayname": "Part B. Maintenance Dept Assesment",
+            "fields": [
+                "MNT Assessment",
+                "MNT Reviewed By",
+                "MNT Approval Date"
+            ]
+        },
+        {
+            "displayname": "Part C. Finance Submission",
+            "fields": [
+                "Finance Submission Status",
+                "Finance Submission Date"
+            ]
+        },
+        {
+            "displayname": "Part D. Finance Approval",
+            "fields": [
+                "Finance SM/CFO Approval",
+                "Finance SM/CFO Approval Date"
+            ]
+        },
+        {
+            "displayname": "Part E. Received by Metrology Lab",
+            "fields": [
+                "Metrology Acceptance",
+                "Metrology Acceptance Action By",
+                "Metrology Acceptance Action Date"
+            ]
+        },
+        {
+            "displayname": "Part E. Received by Maintenance Department",
+            "fields": [
+                "Maintenance Acceptance",
+                "Maintenance Acceptance Action By",
+                "Maintenance Acceptance Action Date"
+            ]
+        },
+        {
+            "displayname": "Part E. Closure of form by Finance",
+            "fields": [
+                "Final Acceptance",
+                "Final Acceptance Action By",
+                "Final Acceptance Action Date"
+            ]
+        },
+        {
+            "displayname": "Others"
+        }
+    ]
+}

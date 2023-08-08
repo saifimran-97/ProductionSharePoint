@@ -1,0 +1,49 @@
+TSS Preparation
+	|
+	| > Submit TSS for Engineer Review
+	V
+Engineering Review
+	|
+	| > TSS Reviewed
+	V
+HOD Review
+	|
+	| > TSS Accepted
+	V
+Procurement Submission
+	|
+	| > Accept TSS
+	V
+Procurement Received
+	|
+	| > Send Quote
+	V
+Pending Quote
+	|
+	| > Quote received
+	V
+Quote Received
+	|
+	| > Quote Accepted
+	V
+PR Approval
+	|
+	| > 
+	V
+Pending PO
+	|
+	|
+	V
+PO Out
+	|
+	|
+	V
+Waiting for Items
+	|
+	|
+	V
+Items Received
+	|
+	|
+	V
+Invoice Received
